@@ -73,7 +73,7 @@ mkdir "/.MSI-Claw"
 cp ./msi-claw-gamepad-mode /.MSI-Claw/msi-claw-gamepad-mode
 chown root /.MSI-Claw/msi-claw-gamepad-mode
 chmod u+x /.MSI-Claw/msi-claw-gamepad-mode
-~/.MSI-Claw/msi-claw-gamepad-mode
+/.MSI-Claw/msi-claw-gamepad-mode
 
 # install xpad config
 echo ""
