@@ -18,20 +18,18 @@ done
 
 # install dependencies
 echo "Installing dependencies"
-pacman -Syu
+dnf update --refresh -y
 echo "Installing InputPlumber..."
-pacman -S inputplumber
+dnf install -y inputplumber
 
 if [ "$DESKTOP" = true ]; then
     echo "Installing Steam..."
-    pacman -S steam
-    echo "Installing Disk manager..."
-    pacman -S partitionmanager
+    dnf install -y steam
 fi
 
 # install virtual keybaord
 echo "Installing Virtual Keyboard..."
-pacman -S maliit-keyboard
+dnf install -y maliit-keyboard
 kwriteconfig6 --file kcminputrc --group OnScreenKeyboard --key Enabled true
 kwriteconfig6 --file kcminputrc --group OnScreenKeyboard --key PreferredProvider maliit
 
